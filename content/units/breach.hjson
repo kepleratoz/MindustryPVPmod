@@ -3,12 +3,14 @@
     "name": "Breach",
     "description": "A 6-legged unit designed for breaching enemy defenses.",
     "outlineColor": "00000000",
-    "speed": 0.7,
+    "speed": 0.4,
     "hitSize": 10,
-    "health": 360,
+    "health": 900,
     "faceTarget": true,
-    "armor": 2,
-    "rotateSpeed": 3,
+    "armor": 4,
+    "rotateSpeed": 4,
+    "controller": "GroundAI",
+    "groundLayer": 60,
     "legMoveSpace": 1,
     "legMaxLength": 1.1,
     "legMinLength": 0.2,
@@ -25,7 +27,58 @@
     "legLength": 9,
     "allowLegStep": true,
     "hovering": true,
+    "range": 60,
     "immunities": [
-        "freezing"
+        "burning",
+        "melting",
+        "sapped"
+    ],
+    "research": {
+        "parent": "ground-factory",
+        "requirements": [
+            {
+                "item": "silicon",
+                "amount": 35
+            },
+            {
+                "item": "titanium",
+                "amount": 20
+            },
+            {
+                "item": "graphite",
+                "amount": 5
+            }
+        ]
+    },
+    "weapons": [
+        {
+            "name": "breach-shotgun",
+            "x": 0,
+            "y": 0,
+            "reload": 30,
+            "mirror": false,
+            "alternate": false,
+            "shootY": 2.5,
+            "recoil": 2,
+            "shake": 1,
+            "shootCone": 45,
+            "shoot": {
+                "type": "ShootSpread",
+                "spread": 10,
+                "shots": 3
+            },
+            "shootSound": "shotgun",
+            "ejectEffect": "casing2",
+            "bullet": {
+                "type": "ShrapnelBulletType",
+                "length": 45,
+                "damage": 35,
+                "width": 12,
+                "serrations": 0,
+                "fromColor": "d1ddff",
+                "toColor": "9db5ff",
+                "shootEffect": "shootBig"
+            }
+        }
     ]
 } 

@@ -1,0 +1,52 @@
+{
+    "type": "Reconstructor",
+    "name": "Para Reconstructor",
+    "description": "Upgrades Crawlers into more powerful Breach units.",
+    "size": 3,
+    "constructTime": 600,
+    "consumes": {
+        "power": 3,
+        "items": {
+            "items": [
+                {
+                    "item": "titanium",
+                    "amount": 40
+                },
+                {
+                    "item": "graphite",
+                    "amount": 50
+                },
+                {
+                    "item": "lead",
+                    "amount": 50
+                }
+            ]
+        }
+    },
+    "requirements": [
+        {
+            "item": "copper",
+            "amount": 200
+        },
+        {
+            "item": "graphite",
+            "amount": 180
+        },
+        {
+            "item": "silicon",
+            "amount": 130
+        },
+        {
+            "item": "titanium",
+            "amount": 150
+        }
+    ],
+    "upgrades": [
+        [
+            "crawler",
+            "breach"
+        ]
+    ],
+    "category": "units",
+    "research": "ground-factory"
+} 
