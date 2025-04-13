@@ -1,0 +1,31 @@
+{
+    "type": "legs",
+    "name": "Breach",
+    "description": "A 6-legged unit designed for breaching enemy defenses.",
+    "outlineColor": "00000000",
+    "speed": 0.7,
+    "hitSize": 10,
+    "health": 360,
+    "faceTarget": true,
+    "armor": 2,
+    "rotateSpeed": 3,
+    "legMoveSpace": 1,
+    "legMaxLength": 1.1,
+    "legMinLength": 0.2,
+    "legLengthScl": 0.96,
+    "legForwardScl": 1.1,
+    "legPhysicsLayer": false,
+    "legGroupSize": 4,
+    "legCount": 8,
+    "legExtension": -2,
+    "legContinuousMove": true,
+    "lockLegBase": true,
+    "rippleScale": 0.2,
+    "legBaseOffset": 5,
+    "legLength": 9,
+    "allowLegStep": true,
+    "hovering": true,
+    "immunities": [
+        "freezing"
+    ]
+} 

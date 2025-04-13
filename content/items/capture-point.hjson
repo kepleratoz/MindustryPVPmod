@@ -1,0 +1,11 @@
+{
+    "name": "Capture Point",
+    "description": "A strategic point that must be captured and held.",
+    "color": "84f491",
+    "research": {
+        "parent": "copper",
+        "requirements": []
+    },
+    "alwaysUnlocked": true,
+    "hidden": false
+} 
