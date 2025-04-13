@@ -1,0 +1,12 @@
+{
+    "name": "mindustry-pvp-mod",
+    "displayName": "Mindustry PVP Mod",
+    "author": "YourName",
+    "description": "A PVP-focused Mindustry mod.",
+    "version": "1.0",
+    "minGameVersion": "146",
+    "dependencies": [],
+    "hidden": false,
+    "java": false,
+    "main": "main"
+} 
