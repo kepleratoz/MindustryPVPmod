@@ -1,0 +1,58 @@
+{
+    "name": "Striker",
+    "type": "mech",
+    "description": "A fast-moving walking unit evolved from the Nova.",
+    "outlineColor": "00000000",
+    "speed": 0.35,
+    "hitSize": 8,
+    "health": 380,
+    "armor": 2,
+    "rotateSpeed": 3,
+    "mechFrontSway": 0.6,
+    "mechSideSway": 0.6,
+    "drawCell": true,
+    "range": 160,
+    "controller": "GroundAI",
+    "targetAir": true,
+    "targetGround": true,
+    "circleTarget": true,
+    "rotateShooting": true,
+    "attackLength": 140,
+    "targetPriority": 1,
+    "faceTarget": true,
+    "weapons": [
+        {
+            "name": "striker-weapon",
+            "x": 5,
+            "y": 0,
+            "reload": 45,
+            "mirror": true,
+            "alternate": true,
+            "rotate": false,
+            "shootY": 2,
+            "recoil": 2,
+            "shootSound": "missile",
+            "bullet": {
+                "spawnUnit": "striker-missile",
+                "type": "BasicBulletType",
+                "speed": 0.01,
+                "lifetime": 1,
+                "damage": 0,
+                "keepVelocity": false,
+                "shootEffect": "none",
+                "smokeEffect": "none"
+            }
+        }
+    ],
+    "research": {
+        "parent": "nova",
+        "requirements": [
+            "silicon/40",
+            "graphite/50",
+            "lead/50"
+        ]
+    },
+    "flying": false,
+    "commandable": true,
+    "legCount": 2
+} 

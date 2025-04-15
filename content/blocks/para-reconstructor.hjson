@@ -1,7 +1,7 @@
 {
     "type": "Reconstructor",
     "name": "Para Reconstructor",
-    "description": "Upgrades Crawlers into more powerful Breach units.",
+    "description": "Upgrades Tier 1 Units into Tier 2 Units.",
     "size": 3,
     "constructTime": 600,
     "consumes": {
@@ -45,6 +45,14 @@
         [
             "crawler",
             "breach"
+        ],
+        [
+            "nova",
+            "striker"
+        ],
+        [
+            "dagger",
+            "warrior"
         ]
     ],
     "category": "units",

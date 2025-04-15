@@ -1,0 +1,41 @@
+{
+    "type": "missile",
+    "controller": "SuicideAI",
+    "speed": 3,
+    "rotateSpeed": 4,
+    "flying": true,
+    "health": 45,
+    "hitSize": 8,
+    "lifetime": 60,
+    "isEnemy": false,
+    "allowedInPayloads": false,
+    "playerControllable": false,
+    "physics": false,
+    "useUnitCap": false,
+    "targetAir": true,
+    "targetGround": true,
+    "drawCell": true,
+    "outlineColor": "00000000",
+    "engineSize": 3,
+    "engineOffset": 3,
+    "engineColor": "66B1FFFF",
+    "trailLength": 8,
+    "trailColor": "66B1FFFF",
+    "weapons": [
+        {
+            "name": "test-missile-weapon",
+            "shootCone": 360,
+            "mirror": false,
+            "reload": 1,
+            "shootOnDeath": true,
+            "bullet": {
+                "type": "ExplosionBulletType",
+                "splashDamage": 45,
+                "splashDamageRadius": 20,
+                "hitEffect": "blastExplosion",
+                "shootEffect": "blastExplosion",
+                "killShooter": true
+            }
+        }
+    ]
+} 
