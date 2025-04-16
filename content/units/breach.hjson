@@ -40,19 +40,19 @@
         "sapped"
     ],
     "research": {
-        "parent": "ground-factory",
+        "parent": "crawler",
         "requirements": [
             {
                 "item": "silicon",
-                "amount": 35
-            },
-            {
-                "item": "titanium",
-                "amount": 20
+                "amount": 1200
             },
             {
                 "item": "graphite",
-                "amount": 5
+                "amount": 1000
+            },
+            {
+                "item": "lead",
+                "amount": 800
             }
         ]
     },

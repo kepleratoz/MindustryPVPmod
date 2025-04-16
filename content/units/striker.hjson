@@ -47,9 +47,9 @@
     "research": {
         "parent": "nova",
         "requirements": [
-            "silicon/40",
-            "graphite/50",
-            "lead/50"
+            "silicon/1500",
+            "graphite/1200",
+            "lead/1000"
         ]
     },
     "flying": false,

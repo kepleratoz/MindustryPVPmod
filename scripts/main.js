@@ -1,5 +1,5 @@
 // Log when the script loads
-print("Loading PVP Mod script...");
+print("Loading Dark Atmosphere Mod script...");
 
 // Create UI when the game starts
 Events.on("stateChange", state => {
@@ -53,5 +53,5 @@ function showStatus() {
 // Log when players join
 Events.on("playerJoin", player => {
     print("Player joined: " + player.name);
-    Call.infoMessage(player.con, "[gold]Welcome to PVP Mod![]");
+    Call.infoMessage(player.con, "[gold]Welcome to Dark Atmosphere![]");
 }); 

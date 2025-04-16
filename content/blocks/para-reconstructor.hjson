@@ -1,44 +1,45 @@
 {
     "type": "Reconstructor",
     "name": "Para Reconstructor",
-    "description": "Upgrades Tier 1 Units into Tier 2 Units.",
+    "description": "Reconstructs units into more advanced Shadow variants.",
     "size": 3,
-    "constructTime": 600,
+    "constructTime": 900,
+    "liquidCapacity": 60,
     "consumes": {
         "power": 3,
         "items": {
             "items": [
                 {
-                    "item": "titanium",
+                    "item": "silicon",
                     "amount": 40
                 },
                 {
                     "item": "graphite",
-                    "amount": 50
+                    "amount": 40
                 },
                 {
                     "item": "lead",
                     "amount": 50
                 }
             ]
+        },
+        "liquid": {
+            "liquid": "water",
+            "amount": 0.3
         }
     },
     "requirements": [
         {
-            "item": "copper",
-            "amount": 200
+            "item": "silicon",
+            "amount": 80
         },
         {
             "item": "graphite",
-            "amount": 180
+            "amount": 70
         },
         {
-            "item": "silicon",
-            "amount": 130
-        },
-        {
-            "item": "titanium",
-            "amount": 150
+            "item": "lead",
+            "amount": 110
         }
     ],
     "upgrades": [
@@ -51,10 +52,26 @@
             "striker"
         ],
         [
-            "dagger",
+            "nova",
             "warrior"
         ]
     ],
     "category": "units",
-    "research": "ground-factory"
+    "research": {
+        "parent": "ground-factory",
+        "requirements": [
+            {
+                "item": "silicon",
+                "amount": 1000
+            },
+            {
+                "item": "graphite",
+                "amount": 800
+            },
+            {
+                "item": "lead",
+                "amount": 1200
+            }
+        ]
+    }
 } 
