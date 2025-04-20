@@ -1,0 +1,28 @@
+{
+    type: CoreBlock
+    name: Core: Voyage
+    description: A tough core made for long term exploration and travel. Has high armor and health.
+    requirements: [
+        iron/2000
+        aluminum/2000
+    ]
+    isFirstTier: true
+    size: 3
+    squareSprite: false
+    alwaysUnlocked: true
+    unitType: catalyst
+    health: 4000
+    armor: 14
+    itemCapacity: 16000
+    unitCapModifier: 8
+    category: effect
+    research: {
+        planet: shadow
+        root: true
+        name: Dark Atmosphere
+        requiresUnlock: false
+    }
+    buildVisibility: shown
+    coreFloorSpread: 25
+    incinerateNonBuildable: true
+}

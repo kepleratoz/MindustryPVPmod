@@ -1,7 +1,18 @@
 planet: shadow
 sector: 0
-research: core-voyage
 difficulty: 1
 alwaysUnlocked: true
 localizedName: Landing
 description: A dark landing zone on the mysterious Shadow planet.
+research: core-voyage
+startWaveTimeMultiplier: 3
+defaultStartingItems: true
+configureLoadout: true
+loadout: [
+    {
+        items: {
+            iron: 500
+            aluminum: 500
+        }
+    }
+]
