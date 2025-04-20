@@ -46,7 +46,7 @@
     allowLaunchSchematics: true
     allowLaunchToNumbered: true
     allowLaunchLoadout: true
-    startSector: 1
+    startSector: 0
     orbitSpacing: 1
     radius: 1.1
     minZoom: 1
@@ -64,26 +64,44 @@
     allowWaveSimulation: true
     clearSectorOnLose: true
     allowWaves: true
-    defaultCore: core-voyage
+    defaultCore: "core-voyage"
     parent: sun
     prebuildBase: false
     solarSystem: sun
     allowSectorInvasion: false
-    itemWhitelist: [
+    launchCandidates: []
+    defaultCoreUnit: "catalyst"
+    hiddenItems: [
         "copper",
-        "lead",  
+        "lead",
         "titanium",
-        "thorium", 
-        "pyratite", 
+        "thorium",
+        "beryllium",
+        "tungsten",
+        "oxide",
+        "carbide",
+        "phase-fabric",
         "surge-alloy",
-        "phase-fabric", 
-        "metaglass",
         "plastanium",
-        "blast-compound", 
-        "graphite",
-        "coal", 
-        "silicon", 
         "scrap",
-        "sand"
-]
+        "coal",
+        "sand",
+        "graphite",
+        "metaglass",
+        "pyratite",
+        "blast-compound",
+        "silicon"
+    ]
+    itemWhitelist: [
+        "iron",
+        "aluminum"
+    ]
+    blockWhitelist: [
+        "core-voyage",
+        "para-reconstructor",
+        "iron-wall",
+        "iron-wall-large",
+        "iron-conveyor",
+        "basic-drill"
+    ]
 } 

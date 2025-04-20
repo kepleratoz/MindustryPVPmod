@@ -1,0 +1,26 @@
+type: Drill
+
+size: 2
+tier: 2
+drillTime: 522
+rotateSpeed: 2
+drawRim: true
+updateEffect: pulverize
+updateEffectChance: 0.03
+drillEffect: mine
+warmupSpeed: 0.01
+itemCapacity: 10
+liquidCapacity: 0
+hasLiquids: false
+ambientSound: drill
+ambientSoundVolume: 0.015
+drawMineItem: true
+requirements: [
+  iron/12
+  aluminum/2
+]
+category: production
+research: mechanical-drill
+baseSprite: basic-drill
+rotatorSprite: basic-drill-rotator
+topSprite: basic-drill-top 

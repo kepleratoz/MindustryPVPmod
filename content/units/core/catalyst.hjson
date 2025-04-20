@@ -1,0 +1,61 @@
+{
+    type: flying
+    controller: BuilderAI
+    defaultController: BuilderAI
+    isEnemy: false
+    lowAltitude: true
+    flying: true
+    mineSpeed: 6.5
+    mineTier: 2
+    buildSpeed: 1.2
+    drag: 0.05
+    "outlineColor": "00000000"
+    speed: 3.3
+    rotateSpeed: 15
+    accel: 0.1
+    itemCapacity: 60
+    health: 200
+    armor: 2
+    hitSize: 8
+    engineOffset: 6
+    engineSize: 2.3
+    name: Catalyst
+    description: The core unit of the Core: Voyage. A versatile builder and miner unit equipped with dual homing weapons.
+    coreUnitDock: true
+    weapons: [
+        {
+            name: catalyst-weapon
+            x: 3
+            y: 0
+            reload: 60
+            mirror: true
+            rotate: true
+            rotateSpeed: 5
+            shootSound: missile
+            bullet: {
+                type: MissileBulletType
+                damage: 22
+                speed: 4
+                lifetime: 60
+                homingPower: 0.08
+                homingRange: 80
+                buildingDamageMultiplier: 0.01
+                width: 4
+                height: 6
+                shootEffect: shootSmall
+                smokeEffect: shootSmallSmoke
+                trailLength: 20
+                trailWidth: 1.5
+                trailColor: 84f491
+            }
+        }
+    ]
+    abilities: [
+        {
+            type: RepairFieldAbility
+            amount: 5
+            reload: 70
+            range: 50
+        }
+    ]
+} 

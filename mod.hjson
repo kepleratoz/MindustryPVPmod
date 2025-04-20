@@ -3,10 +3,11 @@
     "displayName": "Dark Atmosphere",
     "author": "kepleratoz",
     "description": "A mod focused on the mysterious Shadow planet, featuring unique units and PvP content. Explore the dark atmosphere and engage in tactical combat.",
-    "version": "1.0",
+    "version": "1.0.1",
     "minGameVersion": "146",
-    "dependencies": [],
+    "dependencies": ["exogenesis"],
     "hidden": false,
     "java": false,
-    "main": "main"
+    "main": "main",
+    "planet": "shadow"
 } 

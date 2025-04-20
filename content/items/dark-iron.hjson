@@ -1,0 +1,11 @@
+{
+    name: "dark-iron"
+    localizedName: "Dark Iron"
+    description: "A mysterious alloy forged in the darkness of Shadow. Used in advanced construction."
+    hardness: 1
+    cost: 0.8
+    alwaysUnlocked: true
+    color: 424242
+    research: core-voyage
+    hiddenOnPlanets: [serpulo, erekir]
+} 

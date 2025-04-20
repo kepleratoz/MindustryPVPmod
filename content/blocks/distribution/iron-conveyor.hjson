@@ -1,0 +1,18 @@
+{
+    type: Conveyor
+    name: Iron Conveyor
+    description: A conveyor made of iron. Moves items at the same speed as a standard conveyor.
+    health: 45
+    speed: 0.03
+    displayedSpeed: 4.2
+    requirements: [
+        iron/1
+    ]
+    category: distribution
+    research: {
+        parent: core-voyage
+        requirements: [
+            iron/10
+        ]
+    }
+} 

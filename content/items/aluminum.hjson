@@ -1,0 +1,11 @@
+{
+    localizedName: "Aluminum"
+    name: aluminum
+    description: "A lightweight mineral that can be found in large amounts. Useful is many simple machines."
+    hardness: 2
+    cost: 1.2
+    color: 1a1a1a
+    research: core-voyage
+    hiddenOnPlanets: [serpulo, erekir]
+    sprite: items/aluminum
+} 

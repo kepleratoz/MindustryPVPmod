@@ -1,0 +1,10 @@
+{
+    name: "dark-crystal"
+    localizedName: "Dark Crystal"
+    description: "A rare crystalline formation that resonates with Shadow's dark energy. Used in advanced technology."
+    hardness: 2
+    cost: 1.5
+    color: 1a1a1a
+    research: core-voyage
+    hiddenOnPlanets: [serpulo, erekir]
+} 

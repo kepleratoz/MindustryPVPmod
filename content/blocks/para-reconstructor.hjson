@@ -52,13 +52,13 @@
             "striker"
         ],
         [
-            "nova",
+            "dagger",
             "warrior"
         ]
     ],
     "category": "units",
     "research": {
-        "parent": "ground-factory",
+        "parent": "core-voyage",
         "requirements": [
             {
                 "item": "silicon",
@@ -72,6 +72,7 @@
                 "item": "lead",
                 "amount": 1200
             }
+        
         ]
     }
 } 

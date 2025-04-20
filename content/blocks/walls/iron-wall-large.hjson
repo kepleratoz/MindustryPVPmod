@@ -1,0 +1,20 @@
+{
+    name: Large Iron Wall
+    description: A large defensive wall made of iron and reinforced with aluminum. Much stronger than its smaller counterpart but takes longer to build.
+    type: Wall
+    health: 1485
+    size: 2
+    buildCostMultiplier: 2
+    requirements: [
+        iron/24
+        aluminum/2
+    ]
+    category: defense
+    research: {
+        parent: iron-wall
+        requirements: [
+            iron/240
+            aluminum/20
+        ]
+    }
+} 

@@ -1,0 +1,12 @@
+{
+    localizedName: "Iron"
+    name: iron
+    description: "The standard material used in a lot of basic things. Used in many alloys, and is very common on Shadow."
+    hardness: 1
+    cost: 0.5
+    alwaysUnlocked: true
+    color: 424242
+    research: core-voyage
+    hiddenOnPlanets: [serpulo, erekir]
+    sprite: items/iron
+} 

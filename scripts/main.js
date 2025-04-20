@@ -1,6 +1,43 @@
 // Log when the script loads
 print("Loading Dark Atmosphere Mod script...");
 
+// Initialize tech tree
+Events.on(ContentInitEvent, () => {
+    // Get our mod
+    const mod = Vars.mods.locateMod("dark-atmosphere");
+    if (!mod) {
+        print("Error: Could not locate dark-atmosphere mod");
+        return;
+    }
+
+    // Get our planet
+    const shadow = Vars.content.planet("shadow");
+    if (!shadow) {
+        print("Error: Could not find shadow planet");
+        return;
+    }
+
+    // Create our tech tree
+    shadow.techTree = () => {
+        // Start with our core
+        const coreVoyage = Vars.content.block("core-voyage");
+        TechTree.nodeRoot(coreVoyage, () => {
+            // Add Para Reconstructor
+            const paraReconstructor = Vars.content.block("para-reconstructor");
+            TechTree.node(coreVoyage, paraReconstructor);
+
+            // Add units
+            const breach = Vars.content.unit("breach");
+            const striker = Vars.content.unit("striker");
+            const warrior = Vars.content.unit("warrior");
+            
+            TechTree.node(paraReconstructor, breach);
+            TechTree.node(paraReconstructor, striker);
+            TechTree.node(paraReconstructor, warrior);
+        });
+    };
+});
+
 // Create UI when the game starts
 Events.on("stateChange", state => {
     print("Game state changed: " + state);
