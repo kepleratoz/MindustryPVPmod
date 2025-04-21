@@ -1,0 +1,18 @@
+{
+    type: Duct
+    name: Chute
+    description: Transports items forward. Acts as a duct system.
+    health: 90
+    speed: 4
+    itemCapacity: 4
+    requirements: [
+        iron/1
+    ]
+    category: distribution
+    research: {
+        parent: core-voyage
+        requirements: [
+            iron/50
+        ]
+    }
+} 

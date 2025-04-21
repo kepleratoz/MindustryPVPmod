@@ -1,0 +1,22 @@
+{
+    type: DuctBridge
+    name: Bridge Chute
+    description: Transports items over terrain or buildings. Can be rotated.
+    health: 90
+    speed: 4
+    itemCapacity: 8
+    bufferCapacity: 8
+    range: 4
+    hasPower: false
+    posConfig: true
+    solid: false
+    displayedSpeed: 4
+    itemScale: 0.3
+    moveItems: true
+    bridgeStyle: chain
+    requirements: [
+        iron/8
+    ]
+    category: distribution
+    research: chute
+} 

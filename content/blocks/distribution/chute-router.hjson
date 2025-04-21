@@ -1,0 +1,13 @@
+{
+    type: DuctRouter
+    name: Chute Router
+    description: Distributes items evenly between three directions.
+    health: 90
+    speed: 4
+    itemCapacity: 4
+    requirements: [
+        iron/3
+    ]
+    category: distribution
+    research: chute
+} 

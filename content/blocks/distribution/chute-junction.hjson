@@ -1,0 +1,18 @@
+{
+    type: Junction
+    name: Chute Junction
+    description: Acts as a junction for two crossing chute lines.
+    health: 90
+    size: 1
+    speed: 4
+    requirements: [
+        iron/2
+    ]
+    squareSprite: false
+    category: distribution
+    research: chute
+    researchCostMultiplier: 0.5
+    transparent: true
+    baseSprite: chute/chute-junction
+    topSprite: chute/chute-junction-bottom
+} 

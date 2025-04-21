@@ -1,0 +1,14 @@
+{
+    type: OverflowDuct
+    name: Underflow Chute
+    description: Only outputs to the sides if the front path is blocked. Opposite of overflow chute.
+    health: 90
+    speed: 4
+    itemCapacity: 4
+    invert: true
+    requirements: [
+        iron/3
+    ]
+    category: distribution
+    research: overflow-chute
+} 

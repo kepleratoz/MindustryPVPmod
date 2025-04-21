@@ -1,0 +1,41 @@
+{
+    type: Drill
+    name: Basic Drill
+    description: A basic drill capable of mining iron and aluminum deposits.
+    size: 2
+    tier: 2
+    rotateSpeed: 4
+    drillTime: 400
+    liquidBoostIntensity: 1.2
+    itemCapacity: 20
+    warmupSpeed: 0.01
+    hasLiquids: true
+    heatColor: 373737FF
+    hardnessDrillMultiplier: 2
+    liquidCapacity: 10
+    expanded: true
+    drillEffect: mine
+    ambientSound: drill
+    ambientSoundVolume: 0.015
+    drawMineItem: true
+    consumes: {
+        liquid: {
+            liquid: water
+            amount: 0.1
+            booster: true
+            optional: true
+        }
+    }
+    requirements: [
+        iron/45
+        aluminum/35
+    ]
+    category: production
+    research: {
+        parent: core-voyage
+        requirements: [
+            iron/200
+            aluminum/150
+        ]
+    }
+} 

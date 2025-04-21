@@ -1,0 +1,195 @@
+{
+  type: ItemTurret
+  name: Shatter
+  description: A compact turret that fires explosive shells. Less effective against buildings.
+  size: 1
+  health: 220
+  reload: 120
+  range: 140
+  maxAmmo: 12
+  recoil: 1
+  rotateSpeed: 5
+  shootSound: artillery
+  outlineColor: 36363CFF
+  squareSprite: false
+  drawer: {
+    type: DrawTurret
+    basePrefix: "iron-"
+  }
+  ammoTypes: {
+    iron: {
+      type: ArtilleryBulletType
+      speed: 3
+      damage: 18
+      splashDamage: 9
+      splashDamageRadius: 24
+      buildingDamageMultiplier: 0.4
+      ammoMultiplier: 4
+      lifetime: 80
+      width: 11
+      height: 11
+      collidesTiles: true
+      collidesGround: true
+      collidesAir: true
+      status: burning
+      statusDuration: 300
+      frontColor: ff5845
+      backColor: c83232
+      trailColor: c83232
+      trailWidth: 2.1
+      trailLength: 12
+      hitEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: WaveEffect
+            sizeTo: 26
+            lifetime: 20
+            colorFrom: ff5845
+            colorTo: c83232
+          }
+          {
+            type: ParticleEffect
+            particles: 12
+            length: 30
+            lifetime: 40
+            colorFrom: ff5845
+            colorTo: c83232
+            sizeFrom: 4
+            sizeTo: 0
+          }
+        ]
+      }
+      despawnEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: WaveEffect
+            sizeTo: 26
+            lifetime: 20
+            colorFrom: ff5845
+            colorTo: c83232
+          }
+          {
+            type: ParticleEffect
+            particles: 8
+            length: 30
+            lifetime: 40
+            colorFrom: ff5845
+            colorTo: c83232
+            sizeFrom: 4
+            sizeTo: 0
+          }
+        ]
+      }
+      shootEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: ParticleEffect
+            particles: 6
+            length: 20
+            lifetime: 30
+            colorFrom: ff5845
+            colorTo: c83232
+            sizeFrom: 3
+            sizeTo: 0
+          }
+        ]
+      }
+    }
+    aluminum: {
+      type: ArtilleryBulletType
+      speed: 3
+      damage: 21
+      splashDamage: 13
+      splashDamageRadius: 24
+      buildingDamageMultiplier: 0.6
+      reloadMultiplier: 0.6
+      lifetime: 80
+      width: 11
+      height: 11
+      collidesTiles: true
+      collidesGround: true
+      collidesAir: true
+      status: slow
+      statusDuration: 18
+      frontColor: d5d5d5
+      backColor: a0a0a0
+      trailColor: a0a0a0
+      trailWidth: 2.1
+      trailLength: 12
+      hitEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: WaveEffect
+            sizeTo: 26
+            lifetime: 20
+            colorFrom: d5d5d5
+            colorTo: a0a0a0
+          }
+          {
+            type: ParticleEffect
+            particles: 12
+            length: 30
+            lifetime: 40
+            colorFrom: d5d5d5
+            colorTo: a0a0a0
+            sizeFrom: 4
+            sizeTo: 0
+          }
+        ]
+      }
+      despawnEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: WaveEffect
+            sizeTo: 26
+            lifetime: 20
+            colorFrom: d5d5d5
+            colorTo: a0a0a0
+          }
+          {
+            type: ParticleEffect
+            particles: 8
+            length: 30
+            lifetime: 40
+            colorFrom: d5d5d5
+            colorTo: a0a0a0
+            sizeFrom: 4
+            sizeTo: 0
+          }
+        ]
+      }
+      shootEffect: {
+        type: MultiEffect
+        effects: [
+          {
+            type: ParticleEffect
+            particles: 6
+            length: 20
+            lifetime: 30
+            colorFrom: d5d5d5
+            colorTo: a0a0a0
+            sizeFrom: 3
+            sizeTo: 0
+          }
+        ]
+      }
+    }
+  }
+  requirements: [
+    iron/35
+    aluminum/25
+  ]
+  category: turret
+  research: {
+    parent: core-voyage
+    requirements: [
+      iron/200
+      aluminum/150
+    ]
+  }
+} 

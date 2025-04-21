@@ -1,0 +1,13 @@
+{
+    type: OverflowDuct
+    name: Overflow Chute
+    description: Only outputs to the front if the side paths are blocked.
+    health: 90
+    speed: 4
+    itemCapacity: 4
+    requirements: [
+        iron/3
+    ]
+    category: distribution
+    research: chute
+} 
