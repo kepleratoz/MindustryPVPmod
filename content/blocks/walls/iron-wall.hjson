@@ -10,9 +10,9 @@
     ]
     category: defense
     research: {
-        parent: core-voyage
+        parent: basic-drill
         requirements: [
-            iron/60
+            iron/40
         ]
     }
 } 

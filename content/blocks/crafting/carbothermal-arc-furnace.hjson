@@ -1,0 +1,59 @@
+{
+    type: GenericCrafter
+    name: Carbothermal Arc Furnace
+    description: Uses coal and quartz to produce silicon through a high-temperature arc reaction.
+    size: 3
+    health: 450
+    craftTime: 40
+    itemCapacity: 20
+    craftEffect: smeltsmoke
+    updateEffect: none
+    ambientSound: smelter
+    ambientSoundVolume: 0.12
+    drawer: {
+        type: DrawMulti
+        drawers: [
+            {
+                type: DrawRegion
+                suffix: ""
+            }
+            {
+                type: DrawFlame
+                flameColor: ffc999
+            }
+            {
+                type: DrawRegion
+                suffix: "-top"
+            }
+        ]
+    }
+    consumes: {
+        items: {
+            items: [
+                coal/1
+                quartz/2
+            ]
+        }
+    }
+    outputItem: silicon/2
+    requirements: [
+        iron/120
+        aluminum/80
+        quartz/60
+    ]
+    category: crafting
+    research: {
+        parent: basic-drill
+        objectives: [
+            {
+                type: SectorComplete
+                preset: landing
+            }
+        ]
+        requirements: [
+            quartz/500
+            iron/500
+            aluminum/350
+        ]
+    }
+} 

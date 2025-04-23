@@ -22,6 +22,14 @@
     name: Catalyst
     description: The core unit of the Core: Voyage. A versatile builder and miner unit equipped with dual homing weapons.
     coreUnitDock: true
+    allowedInPayloads: false
+    targetable: false
+    hittable: false
+    playerControllable: true
+    logicControllable: false
+    alwaysUnlocked: true
+    hidden: true
+    isCounted: false
     weapons: [
         {
             name: catalyst-weapon

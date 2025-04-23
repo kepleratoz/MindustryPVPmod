@@ -1,7 +1,7 @@
 {
     type: Drill
     name: Basic Drill
-    description: A basic drill capable of mining iron and aluminum deposits.
+    description: A basic drill capable of mining various resources. Mines quartz at reduced speed.
     size: 2
     tier: 2
     rotateSpeed: 4
@@ -18,6 +18,17 @@
     ambientSound: drill
     ambientSoundVolume: 0.015
     drawMineItem: true
+    mineItems: [
+        iron,
+        aluminum,
+        quartz,
+        coal,
+        sand,
+        scrap
+    ]
+    drillMultipliers: {
+        quartz: 0.25
+    }
     consumes: {
         liquid: {
             liquid: water
@@ -32,10 +43,9 @@
     ]
     category: production
     research: {
-        parent: core-voyage
+        parent: iron
         requirements: [
-            iron/200
-            aluminum/150
+            iron/50
         ]
     }
 } 

@@ -13,8 +13,8 @@
     research: {
         parent: iron-wall
         requirements: [
-            iron/240
-            aluminum/20
+            iron/200
+            aluminum/50
         ]
     }
 } 

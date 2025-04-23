@@ -1,0 +1,9 @@
+{
+  type: OreBlock
+  itemDrop: quartz
+  oreDefault: true
+  oreScale: 24.5
+  oreThreshold: 0.882
+  variants: 3
+  playerUnmineable: false
+} 

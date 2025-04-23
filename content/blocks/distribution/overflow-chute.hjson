@@ -9,5 +9,10 @@
         iron/3
     ]
     category: distribution
-    research: chute
+    research: {
+        parent: bridge-chute
+        requirements: [
+            iron/1000
+        ]
+    }
 } 

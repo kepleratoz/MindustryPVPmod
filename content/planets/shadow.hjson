@@ -84,17 +84,18 @@
         "surge-alloy",
         "plastanium",
         "scrap",
-        "coal",
-        "sand",
         "graphite",
         "metaglass",
         "pyratite",
-        "blast-compound",
-        "silicon"
+        "blast-compound"
     ]
     itemWhitelist: [
         "iron",
-        "aluminum"
+        "aluminum",
+        "coal",
+        "quartz",
+        "silicon",
+        "sand"
     ]
     blockWhitelist: [
         "core-voyage",

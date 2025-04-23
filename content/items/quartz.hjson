@@ -1,0 +1,10 @@
+{
+  name: Quartz
+  description: A crystalline material used in advanced electronics and glass production.
+  hardness: 2
+  cost: 1
+  color: e6e6e6
+  research: {
+    parent: iron
+  }
+} 

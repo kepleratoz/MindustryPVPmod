@@ -10,7 +10,7 @@
   recoil: 1
   rotateSpeed: 5
   shootSound: artillery
-  outlineColor: 36363CFF
+  outlineColor: 1A1A1AFF
   squareSprite: false
   drawer: {
     type: DrawTurret
@@ -186,10 +186,9 @@
   ]
   category: turret
   research: {
-    parent: core-voyage
+    parent: basic-drill
     requirements: [
-      iron/200
-      aluminum/150
+      iron/150
     ]
   }
 } 

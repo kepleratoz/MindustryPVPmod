@@ -9,5 +9,11 @@
         iron/3
     ]
     category: distribution
-    research: chute
+    research: {
+        parent: chute
+        requirements: [
+            iron/300
+            aluminum/50
+        ]
+    }
 } 

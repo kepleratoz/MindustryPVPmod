@@ -18,5 +18,11 @@
         iron/8
     ]
     category: distribution
-    research: chute
+    research: {
+        parent: chute-router
+        requirements: [
+            aluminum/200
+            iron/500
+        ]
+    }
 } 

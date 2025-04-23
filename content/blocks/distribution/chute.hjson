@@ -10,7 +10,7 @@
     ]
     category: distribution
     research: {
-        parent: core-voyage
+        parent: iron
         requirements: [
             iron/50
         ]

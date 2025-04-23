@@ -10,7 +10,12 @@
     ]
     squareSprite: false
     category: distribution
-    research: chute
+    research: {
+        parent: chute
+        requirements: [
+            iron/250
+        ]
+    }
     researchCostMultiplier: 0.5
     transparent: true
     baseSprite: chute/chute-junction

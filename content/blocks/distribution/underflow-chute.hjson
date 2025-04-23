@@ -10,5 +10,11 @@
         iron/3
     ]
     category: distribution
-    research: overflow-chute
+    research: {
+        parent: overflow-chute
+        requirements: [
+            aluminum/500
+            iron/500
+        ]
+    }
 } 
